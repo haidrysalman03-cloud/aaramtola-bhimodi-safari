@@ -1,0 +1,716 @@
+{
+  "fields": [
+    {
+      "key": "field_1",
+      "label": "AARAMTOLA–BHIMODI ",
+      "section": "Navigation"
+    },
+    {
+      "key": "field_2",
+      "label": "ECOTOURISM SAFARI",
+      "section": "Navigation"
+    },
+    {
+      "key": "field_3",
+      "label": "☰",
+      "section": "Navigation"
+    },
+    {
+      "key": "field_4",
+      "label": "Toggle navigation",
+      "section": "Navigation",
+      "attr": "aria-label"
+    },
+    {
+      "key": "field_5",
+      "label": "About",
+      "section": "Navigation"
+    },
+    {
+      "key": "field_6",
+      "label": "Experiences",
+      "section": "Navigation"
+    },
+    {
+      "key": "field_7",
+      "label": "Safari Charges",
+      "section": "Navigation"
+    },
+    {
+      "key": "field_8",
+      "label": "Gallery",
+      "section": "Navigation"
+    },
+    {
+      "key": "field_9",
+      "label": "Contact",
+      "section": "Navigation"
+    },
+    {
+      "key": "field_10",
+      "label": "Enquire Now ↗",
+      "section": "Navigation"
+    },
+    {
+      "key": "field_11",
+      "label": "Balaghat · Madhya Pradesh · India",
+      "section": "home"
+    },
+    {
+      "key": "field_12",
+      "label": "Into the",
+      "section": "home"
+    },
+    {
+      "key": "field_13",
+      "label": "Wild, Beyond",
+      "section": "home"
+    },
+    {
+      "key": "field_14",
+      "label": "the Ordinary.",
+      "section": "home"
+    },
+    {
+      "key": "field_15",
+      "label": "Discover the beauty of untouched forests, peaceful landscapes and memorable",
+      "section": "home"
+    },
+    {
+      "key": "field_16",
+      "label": "Plan Your Safari ↗",
+      "section": "home"
+    },
+    {
+      "key": "field_17",
+      "label": "Explore Experiences",
+      "section": "home"
+    },
+    {
+      "key": "field_18",
+      "label": "Discover the Wild. Feel the Wonder.",
+      "section": "home"
+    },
+    {
+      "key": "field_19",
+      "label": "24 KM",
+      "section": "General"
+    },
+    {
+      "key": "field_20",
+      "label": "Jungle Adventure Track",
+      "section": "General"
+    },
+    {
+      "key": "field_21",
+      "label": "2",
+      "section": "General"
+    },
+    {
+      "key": "field_22",
+      "label": "Morning & Evening Safaris",
+      "section": "General"
+    },
+    {
+      "key": "field_23",
+      "label": "Nature",
+      "section": "General"
+    },
+    {
+      "key": "field_24",
+      "label": "Beyond Tiger Sightings",
+      "section": "General"
+    },
+    {
+      "key": "field_25",
+      "label": "Welcome to the wild",
+      "section": "about"
+    },
+    {
+      "key": "field_26",
+      "label": "More than a safari. A connection with nature.",
+      "section": "about"
+    },
+    {
+      "key": "field_27",
+      "label": "Far from the noise of the city, Aaramtola–Bhimodi offers a refreshing fores",
+      "section": "about"
+    },
+    {
+      "key": "field_28",
+      "label": "Our trained safari guides help visitors appreciate the forest, its trees, w",
+      "section": "about"
+    },
+    {
+      "key": "field_29",
+      "label": "Discover More ↗",
+      "section": "about"
+    },
+    {
+      "key": "field_30",
+      "label": "Sunlight through a peaceful green forest",
+      "section": "about",
+      "attr": "alt"
+    },
+    {
+      "key": "field_31",
+      "label": "Explore & discover",
+      "section": "experiences"
+    },
+    {
+      "key": "field_32",
+      "label": "Experiences worth remembering.",
+      "section": "experiences"
+    },
+    {
+      "key": "field_33",
+      "label": "A little adventure, a little peace, and a lot of nature.",
+      "section": "experiences"
+    },
+    {
+      "key": "field_34",
+      "label": "Green forest safari trail",
+      "section": "experiences",
+      "attr": "alt"
+    },
+    {
+      "key": "field_35",
+      "label": "Jungle Safari",
+      "section": "experiences"
+    },
+    {
+      "key": "field_36",
+      "label": "Experience a 24 KM forest adventure track with morning and evening safari o",
+      "section": "experiences"
+    },
+    {
+      "key": "field_37",
+      "label": "Bird perched in nature",
+      "section": "experiences",
+      "attr": "alt"
+    },
+    {
+      "key": "field_38",
+      "label": "Birds & Biodiversity",
+      "section": "experiences"
+    },
+    {
+      "key": "field_39",
+      "label": "Discover birdlife, native trees and fascinating forest ecosystems with trai",
+      "section": "experiences"
+    },
+    {
+      "key": "field_40",
+      "label": "Peaceful water and forest landscape",
+      "section": "experiences",
+      "attr": "alt"
+    },
+    {
+      "key": "field_41",
+      "label": "Nature & Scenic Views",
+      "section": "experiences"
+    },
+    {
+      "key": "field_42",
+      "label": "Enjoy the calm atmosphere of the forest and the natural beauty around Bhimo",
+      "section": "experiences"
+    },
+    {
+      "key": "field_43",
+      "label": "Lush forest pathway",
+      "section": "General",
+      "attr": "alt"
+    },
+    {
+      "key": "field_44",
+      "label": "The Aaramtola experience",
+      "section": "General"
+    },
+    {
+      "key": "field_45",
+      "label": "Leave the city behind. Take the forest with you.",
+      "section": "General"
+    },
+    {
+      "key": "field_46",
+      "label": "The best memories are not always about spotting a big cat. Sometimes, they ",
+      "section": "General"
+    },
+    {
+      "key": "field_47",
+      "label": "✓ Trained safari guides",
+      "section": "General"
+    },
+    {
+      "key": "field_48",
+      "label": "✓ Scenic jungle routes",
+      "section": "General"
+    },
+    {
+      "key": "field_49",
+      "label": "✓ Morning safari available",
+      "section": "General"
+    },
+    {
+      "key": "field_50",
+      "label": "✓ Evening safari available",
+      "section": "General"
+    },
+    {
+      "key": "field_51",
+      "label": "Plan your visit",
+      "section": "charges"
+    },
+    {
+      "key": "field_52",
+      "label": "Safari charges.",
+      "section": "charges"
+    },
+    {
+      "key": "field_53",
+      "label": "Transparent information to help you plan your next nature escape.",
+      "section": "charges"
+    },
+    {
+      "key": "field_54",
+      "label": "Tourism Fee",
+      "section": "charges"
+    },
+    {
+      "key": "field_55",
+      "label": "₹1,320",
+      "section": "charges"
+    },
+    {
+      "key": "field_56",
+      "label": "Tourism fee for the safari experience.",
+      "section": "charges"
+    },
+    {
+      "key": "field_57",
+      "label": "Guide Charges",
+      "section": "charges"
+    },
+    {
+      "key": "field_58",
+      "label": "₹800",
+      "section": "charges"
+    },
+    {
+      "key": "field_59",
+      "label": "Charges for a trained safari guide.",
+      "section": "charges"
+    },
+    {
+      "key": "field_60",
+      "label": "Gypsy Charges",
+      "section": "charges"
+    },
+    {
+      "key": "field_61",
+      "label": "Additional",
+      "section": "charges"
+    },
+    {
+      "key": "field_62",
+      "label": "Gypsy vehicle charges apply separately. Contact our team for the current ra",
+      "section": "charges"
+    },
+    {
+      "key": "field_63",
+      "label": "Fees are indicative information provided for this website and should be con",
+      "section": "charges"
+    },
+    {
+      "key": "field_64",
+      "label": "A glimpse of nature",
+      "section": "gallery"
+    },
+    {
+      "key": "field_65",
+      "label": "The forest is calling.",
+      "section": "gallery"
+    },
+    {
+      "key": "field_66",
+      "label": "Original photographs from the Aaramtola–Bhimodi forest landscape, its biodi",
+      "section": "gallery"
+    },
+    {
+      "key": "field_67",
+      "label": "Discover the forest",
+      "section": "video"
+    },
+    {
+      "key": "field_68",
+      "label": "A glimpse into Aaramtola–Bhimodi.",
+      "section": "video"
+    },
+    {
+      "key": "field_69",
+      "label": "Watch a moment from the safari landscape.",
+      "section": "video"
+    },
+    {
+      "key": "field_70",
+      "label": "Your browser does not support video playback.",
+      "section": "video"
+    },
+    {
+      "key": "field_71",
+      "label": "Aaramtola–Bhimodi safari video",
+      "section": "video",
+      "attr": "aria-label"
+    },
+    {
+      "key": "field_72",
+      "label": "Your journey begins here",
+      "section": "booking"
+    },
+    {
+      "key": "field_73",
+      "label": "Ready to explore Aaramtola–Bhimodi?",
+      "section": "booking"
+    },
+    {
+      "key": "field_74",
+      "label": "Morning and evening safari enquiries are welcome. Share your preferred date",
+      "section": "booking"
+    },
+    {
+      "key": "field_75",
+      "label": " Aaramtola–Bhimodi, Balaghat, Madhya Pradesh",
+      "section": "booking"
+    },
+    {
+      "key": "field_76",
+      "label": "Location:",
+      "section": "booking"
+    },
+    {
+      "key": "field_79",
+      "label": "Safari enquiry",
+      "section": "booking"
+    },
+    {
+      "key": "field_80",
+      "label": "Full name",
+      "section": "booking"
+    },
+    {
+      "key": "field_81",
+      "label": "Your name",
+      "section": "booking",
+      "attr": "placeholder"
+    },
+    {
+      "key": "field_82",
+      "label": "Mobile number",
+      "section": "booking"
+    },
+    {
+      "key": "field_83",
+      "label": "Your mobile number",
+      "section": "booking",
+      "attr": "placeholder"
+    },
+    {
+      "key": "field_84",
+      "label": "Preferred date",
+      "section": "booking"
+    },
+    {
+      "key": "field_85",
+      "label": "Safari preference",
+      "section": "booking"
+    },
+    {
+      "key": "field_86",
+      "label": "Choose a slot",
+      "section": "booking"
+    },
+    {
+      "key": "field_87",
+      "label": "Morning Safari",
+      "section": "booking"
+    },
+    {
+      "key": "field_88",
+      "label": "Evening Safari",
+      "section": "booking"
+    },
+    {
+      "key": "field_89",
+      "label": "Number of guests",
+      "section": "booking"
+    },
+    {
+      "key": "field_90",
+      "label": "Gypsies requested",
+      "section": "booking"
+    },
+    {
+      "key": "field_91",
+      "label": "Send Enquiry on WhatsApp ↗",
+      "section": "booking"
+    },
+    {
+      "key": "field_92",
+      "label": "This opens WhatsApp with your enquiry. No payment is collected and no reser",
+      "section": "booking"
+    },
+    {
+      "key": "field_93",
+      "label": "Aaramtola–Bhimodi Safari",
+      "section": "Footer"
+    },
+    {
+      "key": "field_94",
+      "label": "Discover the Wild. Feel the Wonder.",
+      "section": "Footer"
+    },
+    {
+      "key": "field_95",
+      "label": "Balaghat, Madhya Pradesh · ",
+      "section": "Footer"
+    },
+    {
+      "key": "field_96",
+      "label": " · ",
+      "section": "Footer"
+    },
+    {
+      "key": "field_99",
+      "label": "Aaramtola–Bhimodi Safari | Discover the Wild. Feel the Wonder.",
+      "section": "General"
+    },
+    {
+      "key": "field_100",
+      "label": "Explore Aaramtola–Bhimodi Safari in Balaghat. Discover the Wild. Feel the W",
+      "section": "General",
+      "attr": "content"
+    }
+  ],
+  "defaults": {
+    "values": {
+      "field_1": "AARAMTOLA–BHIMODI ",
+      "field_2": "ECOTOURISM SAFARI",
+      "field_3": "☰",
+      "field_4": "Toggle navigation",
+      "field_5": "About",
+      "field_6": "Experiences",
+      "field_7": "Safari Charges",
+      "field_8": "Gallery",
+      "field_9": "Contact",
+      "field_10": "Enquire Now ↗",
+      "field_11": "Balaghat · Madhya Pradesh · India",
+      "field_12": "Into the",
+      "field_13": "Wild, Beyond",
+      "field_14": "the Ordinary.",
+      "field_15": "Discover the beauty of untouched forests, peaceful landscapes and memorable adventures at Aaramtola–Bhimodi Ecotourism Safari.",
+      "field_16": "Plan Your Safari ↗",
+      "field_17": "Explore Experiences",
+      "field_18": "Discover the Wild. Feel the Wonder.",
+      "field_19": "24 KM",
+      "field_20": "Jungle Adventure Track",
+      "field_21": "2",
+      "field_22": "Morning & Evening Safaris",
+      "field_23": "Nature",
+      "field_24": "Beyond Tiger Sightings",
+      "field_25": "Welcome to the wild",
+      "field_26": "More than a safari. A connection with nature.",
+      "field_27": "Far from the noise of the city, Aaramtola–Bhimodi offers a refreshing forest experience. Travel along a scenic jungle trail, listen to birdsong, discover local biodiversity and enjoy the peaceful beauty of Bhimodi Talab.",
+      "field_28": "Our trained safari guides help visitors appreciate the forest, its trees, wildlife and natural heritage. Every journey is about experiencing the whole forest — not just searching for a tiger.",
+      "field_29": "Discover More ↗",
+      "field_30": "Sunlight through a peaceful green forest",
+      "field_31": "Explore & discover",
+      "field_32": "Experiences worth remembering.",
+      "field_33": "A little adventure, a little peace, and a lot of nature.",
+      "field_34": "Green forest safari trail",
+      "field_35": "Jungle Safari",
+      "field_36": "Experience a 24 KM forest adventure track with morning and evening safari options.",
+      "field_37": "Bird perched in nature",
+      "field_38": "Birds & Biodiversity",
+      "field_39": "Discover birdlife, native trees and fascinating forest ecosystems with trained guides.",
+      "field_40": "Peaceful water and forest landscape",
+      "field_41": "Nature & Scenic Views",
+      "field_42": "Enjoy the calm atmosphere of the forest and the natural beauty around Bhimodi Talab.",
+      "field_43": "Lush forest pathway",
+      "field_44": "The Aaramtola experience",
+      "field_45": "Leave the city behind. Take the forest with you.",
+      "field_46": "The best memories are not always about spotting a big cat. Sometimes, they are the sound of leaves, the sight of a bird, a quiet trail and the stories shared by a local guide.",
+      "field_47": "✓ Trained safari guides",
+      "field_48": "✓ Scenic jungle routes",
+      "field_49": "✓ Morning safari available",
+      "field_50": "✓ Evening safari available",
+      "field_51": "Plan your visit",
+      "field_52": "Safari charges.",
+      "field_53": "Transparent information to help you plan your next nature escape.",
+      "field_54": "Tourism Fee",
+      "field_55": "₹1,320",
+      "field_56": "Tourism fee for the safari experience.",
+      "field_57": "Guide Charges",
+      "field_58": "₹800",
+      "field_59": "Charges for a trained safari guide.",
+      "field_60": "Gypsy Charges",
+      "field_61": "Additional",
+      "field_62": "Gypsy vehicle charges apply separately. Contact our team for the current rate.",
+      "field_63": "Fees are indicative information provided for this website and should be confirmed with the safari team before booking. Availability, applicable conditions and final charges are subject to confirmation.",
+      "field_64": "A glimpse of nature",
+      "field_65": "The forest is calling.",
+      "field_66": "Original photographs from the Aaramtola–Bhimodi forest landscape, its biodiversity and scenic surroundings.",
+      "field_67": "Discover the forest",
+      "field_68": "A glimpse into Aaramtola–Bhimodi.",
+      "field_69": "Watch a moment from the safari landscape.",
+      "field_70": "Your browser does not support video playback.",
+      "field_71": "Aaramtola–Bhimodi safari video",
+      "field_72": "Your journey begins here",
+      "field_73": "Ready to explore Aaramtola–Bhimodi?",
+      "field_74": "Morning and evening safari enquiries are welcome. Share your preferred date and group size, and our team can help with availability and details.",
+      "field_75": " Aaramtola–Bhimodi, Balaghat, Madhya Pradesh",
+      "field_76": "Location:",
+      "field_79": "Safari enquiry",
+      "field_80": "Full name",
+      "field_81": "Your name",
+      "field_82": "Mobile number",
+      "field_83": "Your mobile number",
+      "field_84": "Preferred date",
+      "field_85": "Safari preference",
+      "field_86": "Choose a slot",
+      "field_87": "Morning Safari",
+      "field_88": "Evening Safari",
+      "field_89": "Number of guests",
+      "field_90": "Gypsies requested",
+      "field_91": "Send Enquiry on WhatsApp ↗",
+      "field_92": "This opens WhatsApp with your enquiry. No payment is collected and no reservation is confirmed automatically. Our team will confirm availability and final charges.",
+      "field_93": "Aaramtola–Bhimodi Safari",
+      "field_94": "Discover the Wild. Feel the Wonder.",
+      "field_95": "Balaghat, Madhya Pradesh · ",
+      "field_96": " · ",
+      "field_99": "Aaramtola–Bhimodi Safari | Discover the Wild. Feel the Wonder.",
+      "field_100": "Explore Aaramtola–Bhimodi Safari in Balaghat. Discover the Wild. Feel the Wonder. Enquire for morning and evening jungle safari experiences."
+    },
+    "gallery": [
+      {
+        "src": "assets/photo-01.jpg",
+        "alt": "Forest entrance",
+        "caption": "Forest entrance"
+      },
+      {
+        "src": "assets/photo-02.jpg",
+        "alt": "Safari entry gate",
+        "caption": "Safari entry gate"
+      },
+      {
+        "src": "assets/photo-03.jpg",
+        "alt": "Guide orientation",
+        "caption": "Guide orientation"
+      },
+      {
+        "src": "assets/photo-04.jpg",
+        "alt": "Golden orb-weaver spider",
+        "caption": "Golden orb-weaver spider"
+      },
+      {
+        "src": "assets/photo-05.jpg",
+        "alt": "Forest vines",
+        "caption": "Forest vines"
+      },
+      {
+        "src": "assets/photo-06.jpg",
+        "alt": "Spider close-up",
+        "caption": "Spider close-up"
+      },
+      {
+        "src": "assets/photo-07.jpg",
+        "alt": "Forest spider",
+        "caption": "Forest spider"
+      },
+      {
+        "src": "assets/photo-08.jpg",
+        "alt": "Forest roots",
+        "caption": "Forest roots"
+      },
+      {
+        "src": "assets/photo-09.jpg",
+        "alt": "Wild mushroom",
+        "caption": "Wild mushroom"
+      },
+      {
+        "src": "assets/photo-10.jpg",
+        "alt": "Mushroom cap",
+        "caption": "Mushroom cap"
+      },
+      {
+        "src": "assets/photo-11.jpg",
+        "alt": "Wild fruit",
+        "caption": "Wild fruit"
+      },
+      {
+        "src": "assets/photo-12.jpg",
+        "alt": "Forest stream",
+        "caption": "Forest stream"
+      },
+      {
+        "src": "assets/photo-13.jpg",
+        "alt": "Forest leaves",
+        "caption": "Forest leaves"
+      },
+      {
+        "src": "assets/photo-14.jpg",
+        "alt": "Stream landscape",
+        "caption": "Stream landscape"
+      },
+      {
+        "src": "assets/photo-15.jpg",
+        "alt": "Bhimodi lake",
+        "caption": "Bhimodi lake"
+      },
+      {
+        "src": "assets/photo-16.jpg",
+        "alt": "Termite mound",
+        "caption": "Termite mound"
+      },
+      {
+        "src": "assets/photo-17.jpeg",
+        "alt": "Forest-side nature retreat",
+        "caption": "Forest-side nature retreat"
+      },
+      {
+        "src": "assets/photo-18.jpeg",
+        "alt": "Bhimodi–Aaramtola entrance gate",
+        "caption": "Bhimodi–Aaramtola entrance gate"
+      },
+      {
+        "src": "assets/photo-19.jpeg",
+        "alt": "Safari guide and team orientation",
+        "caption": "Safari guide and team orientation"
+      },
+      {
+        "src": "assets/photo-20.jpeg",
+        "alt": "Safari guide briefing",
+        "caption": "Safari guide briefing"
+      },
+      {
+        "src": "assets/photo-21.jpeg",
+        "alt": "Forest staff training",
+        "caption": "Forest staff training"
+      },
+      {
+        "src": "assets/photo-22.jpeg",
+        "alt": "Bhimodi lakeside landscape",
+        "caption": "Bhimodi lakeside landscape"
+      },
+      {
+        "src": "assets/photo-23.png",
+        "alt": "Welcome to Bhimodi–Aaramtola",
+        "caption": "Welcome to Bhimodi–Aaramtola"
+      }
+    ],
+    "phones": [
+      "+919977377191",
+      "+918719988149"
+    ],
+    "whatsapp": "919977377191"
+  }
+}
