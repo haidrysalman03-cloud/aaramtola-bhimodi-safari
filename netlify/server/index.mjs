@@ -1,3 +1,4 @@
+import { requireAdmin } from './auth.mjs';
 import { Hono } from 'hono';
 import { drizzle } from 'drizzle-orm/netlify-db';
 import { eq, sql } from 'drizzle-orm';
@@ -13,20 +14,7 @@ app.use('/api/*', async (c,next) => {
   c.header('X-Content-Type-Options','nosniff');
   await next();
 });
-app.use('/api/admin/*', async (c,next) => {
-  if (c.req.method !== 'GET' && c.req.header('origin') !== new URL(c.req.url).origin) return c.json({error:'Request origin rejected.'},403);
-  const token = c.req.header('cookie')?.match(/(?:^|;\s*)nf_jwt=([^;]+)/)?.[1];
-  if (!token) return c.json({error:'Please sign in.'},401);
-  // Identity verifies the session remotely; never trust decoded browser claims.
-  const result = await fetch('https://aaramtola-bhimodi-safari.netlify.app/.netlify/identity/user', {
-    headers:{Authorization:`Bearer ${decodeURIComponent(token)}`}, signal:AbortSignal.timeout(8000),
-  });
-  if (!result.ok) return c.json({error:'Session expired. Please sign in again.'},401);
-  const user = await result.json();
-  if (!user.app_metadata?.roles?.includes('admin')) return c.json({error:'An administrator role is required. Contact the site owner.'},403);
-  c.set('user',user);
-  await next();
-});
+app.use('/api/admin/*', requireAdmin);
 app.get('/api/content', async c => {
   const [row] = await db.select().from(content).where(eq(content.id,'published'));
   return c.json(row?.data || manifest.defaults);

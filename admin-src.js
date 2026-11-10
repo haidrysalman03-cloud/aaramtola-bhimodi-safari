@@ -1,13 +1,15 @@
-import { login, logout, getUser, handleAuthCallback, acceptInvite, recoverPassword, refreshSession } from '@netlify/identity';
+import { login, logout, getUser, handleAuthCallback, acceptInvite, updateUser, requestPasswordRecovery, refreshSession } from '@netlify/identity';
+import { createAuthFlow } from './auth-flow.js';
+const authFlow=createAuthFlow({login,handleAuthCallback,acceptInvite,updateUser});
 const $=id=>document.getElementById(id);
-let data,revision=0,manifest,dirty=false,busy=false,invite,recovery,conflict=false;
+let data,revision=0,manifest,dirty=false,busy=false,conflict=false;
 function status(message,error=false){$('status').textContent=message;$('status').classList.toggle('error',error);if(error)$('status').scrollIntoView({block:'nearest',behavior:'smooth'});}
 function changed(){dirty=true;$('dirty').textContent='Unsaved changes';}
 async function api(path,options={}){
   await refreshSession();
   const response=await fetch('/api/admin/'+path,{...options,credentials:'same-origin',cache:'no-store'});
   const result=await response.json();
-  if(!response.ok){if(response.status===409)conflict=true;throw new Error(result.error || 'Request failed.');}
+  if(!response.ok){if(response.status===401||response.status===403){$('studio').hidden=true;$('auth').hidden=false;$('signoutAuth').hidden=false;}if(response.status===409)conflict=true;throw new Error(result.error || 'Request failed.');}
   return result;
 }
 function lock(value){busy=value;document.querySelectorAll('#studio input,#studio textarea,#studio button,#studio select').forEach(el=>el.disabled=value);}
@@ -77,28 +79,36 @@ for(const action of ['save','publish'])$(action).onclick=async()=>{
 };
 $('search').oninput=renderText;$('section').onchange=renderText;
 document.querySelectorAll('[data-tab]').forEach(button=>button.onclick=()=>{document.querySelectorAll('[data-tab]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));document.querySelectorAll('.tab').forEach(tab=>tab.hidden=tab.id!==button.dataset.tab);});
-$('logout').onclick=async()=>{if(dirty&&!confirm('Sign out and discard your unsaved changes?'))return;try{await logout();dirty=false;location.reload();}catch{status('Unable to sign out. Please try again.',true);}};
+$('signoutAuth').onclick=$('logout').onclick=async()=>{if(dirty&&!confirm('Sign out and discard your unsaved changes?'))return;try{await logout();dirty=false;location.reload();}catch{status('Unable to sign out. Please try again.',true);}};
 window.addEventListener('beforeunload',event=>{if(dirty){event.preventDefault();event.returnValue='';}});
 $('loginForm').onsubmit=async e=>{
   e.preventDefault();$('loginButton').disabled=true;status('Signing in…');
   try{
-    if(invite)await acceptInvite(invite,$('password').value);
-    else if(recovery)await recoverPassword(recovery,$('password').value);
-    else await login($('email').value.trim(),$('password').value);
-    $('password').value='';invite=null;recovery=null;await openStudio();status('Signed in. Changes remain private until you publish.');
-  }catch(error){status(error.message||'Sign-in failed. Check your details and try again.',true);}finally{$('loginButton').disabled=false;}
+    await authFlow.submit($('email').value,$('password').value,$('confirmPassword').value);
+    $('password').value='';$('confirmPassword').value='';$('signoutAuth').hidden=false;await openStudio();status('Signed in. Changes remain private until you publish.');
+  }catch(error){status(authFlow.mode==='login'?'Unable to sign in or open the editor. Check your email and password. For an unused invitation, open the invitation email first. '+(error.message?.includes('role')?error.message:''): 'Password setup failed. Check your connection and retry, or request a fresh email link if it has expired.',true);}finally{$('loginButton').disabled=false;}
 };
 (async()=>{
+  let mode;
+  $('loginButton').disabled=true;
+  try{mode=await authFlow.initialize();}
+  catch{history.replaceState(null,'',location.pathname);status('This email link could not be verified. It may have expired or already been used. Request a new recovery email below, or ask the site owner to resend your invitation. Reload without the link to sign in.',true);return;}
+  $('loginButton').disabled=false;
   try{
-    // Capture recovery before the SDK consumes the callback hash.
-    const params=new URLSearchParams(location.hash.slice(1));recovery=params.get('recovery_token');
-    const result=recovery?null:await handleAuthCallback();
-    if(recovery||result?.type==='invite'){
-      invite=result?.token;history.replaceState(null,'',location.pathname);
+    if(mode!=='login'){
       $('email').required=false;$('email').closest('label').hidden=true;$('password').autocomplete='new-password';$('password').minLength=12;
-      $('loginButton').textContent=recovery?'Set new password':'Accept invitation';$('accountNote').textContent='Choose a password of at least 12 characters. An admin role is required before you can edit.';return;
+      $('confirmLabel').hidden=false;$('confirmPassword').required=true;$('forgot').hidden=true;
+      $('loginButton').textContent=mode==='recovery'?'Set new password':'Accept invitation';$('accountNote').textContent='Choose and confirm a password of at least 12 characters. An admin role is required before you can edit.';return;
     }
     $('password').removeAttribute('minlength');
-    if(await getUser())await openStudio();
-  }catch(error){status(error.message||'Authentication is unavailable. Please try again later.',true);}
+    if(await getUser()){$('signoutAuth').hidden=false;await openStudio();}
+  }catch(error){status(error.message||'Unable to open the editor. Please retry.',true);}
 })();
+
+$('forgot').onclick=()=>{$('recoveryForm').hidden=!$('recoveryForm').hidden;};
+$('recoveryForm').onsubmit=async event=>{
+  event.preventDefault();$('recoveryButton').disabled=true;
+  try{await requestPasswordRecovery($('recoveryEmail').value.trim());status('If this address has an account, a password reset email is on its way. Check your inbox and spam folder.');}
+  catch{status('Unable to request a reset email. Please try again later.',true);}
+  finally{$('recoveryButton').disabled=false;}
+};
